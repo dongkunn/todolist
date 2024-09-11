@@ -1,0 +1,22 @@
+<!-- res/drawable/two_colors.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="180"
+                android:startColor="#8F6ECE"
+                android:centerColor="#A387DC"
+                android:endColor="#BAA3EC"/>
+        </shape>
+    </item>
+
+    <item android:top="115dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="180"
+                android:startColor="#D6D6DA"
+                android:centerColor="#E8E8EC"
+                android:endColor="#F7F7FB"/>
+        </shape>
+    </item>
+</layer-list>

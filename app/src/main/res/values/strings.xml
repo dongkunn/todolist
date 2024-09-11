@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TodoList</string>
+    <string name="main_title">To Do List...</string>
+    <string name="noInputData">Please, Input contents.</string>
+    <string name="deleteSelectData">Do you want to delete?</string>
+    <string name="okBtn">Confirm</string>
+    <string name="noBtn">Cancel</string>
+    <string name="shareNoData">There is no data to share.</string>
+    <string name="deleteNoData">There is no data to delete.</string>
+    <string name="textDeleted">Deleted.</string>
+    <string name="deleteAllData">Do you want to delete all items?</string>
+    <string name="textSaved">Saved.</string>
+    <string name="textInputContents">Please input contents.</string>
+    <string name="textTouch">"화면을 터치해서 항목을 입력하세요."</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+</resources>
