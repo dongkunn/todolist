@@ -188,6 +188,7 @@ public class MainActivity extends AppCompatActivity implements ChecklistAdapter.
     private void refreshView() {
         ArrayList<ItemVo> list = sqliteHelper.getItemListByCondition(new ItemVo(), true);
         adapter.setItems(list);
+        this.itemList = list;
     }
 
     private boolean isEmpty(ArrayList<ItemVo> list) {

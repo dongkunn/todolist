@@ -38,7 +38,7 @@ public class SqliteHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String createTableQuery = "CREATE TABLE IF NOT EXISTS " + DB_TABLE + "(" +
+        String createTableQuery = "CREATE TABLE IF NOT EXISTS " + DB_TABLE + " (" +
                 FIELD_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 FIELD_ITEM_CONTENTS + " TEXT NOT NULL," +
                 FIELD_ITEM_COM_YN + " TEXT NOT NULL," +
@@ -50,13 +50,17 @@ public class SqliteHelper extends SQLiteOpenHelper {
                 FIELD_UPDATE_DATE + " TEXT)";
         db.execSQL(createTableQuery);
 
-//        ItemVo vo = new ItemVo();
-//        vo.setId(1);
-//        vo.setItemComYn("N");
-//        vo.setPriorOrder(1);
-//        vo.setItemContents(this.context.getString(R.string.textTouch));
-//
-//        insertItem(vo);
+        String insertItemQuery = "INSERT INTO " + DB_TABLE + " (" +
+                FIELD_ID + ", " +
+                FIELD_ITEM_CONTENTS + ", " +
+                FIELD_ITEM_COM_YN + ", " +
+                FIELD_PRIOR_ORDER + ", " +
+                FIELD_DEL_YN + ", " +
+                FIELD_CREATE_USER_ID + ", " +
+                FIELD_CREATE_DATE + ") " +
+                "VALUES (1, '"+ context.getString(R.string.textManual)+"', 'N', 0, 'N', '"+PlannerUtil.createUserId+"', datetime('now','localtime'))";
+
+        db.execSQL(insertItemQuery);
     }
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
