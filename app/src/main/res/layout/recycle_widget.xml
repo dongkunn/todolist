@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp">
+
+    <TextView
+        android:id="@+id/itemTextInWidget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/widget_border"
+        android:dividerHeight="1dp"
+        android:padding="5dp"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:layerType="software"/>
+
+</LinearLayout>

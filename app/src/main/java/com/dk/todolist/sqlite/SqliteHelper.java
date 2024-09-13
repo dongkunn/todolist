@@ -124,7 +124,7 @@ public class SqliteHelper extends SQLiteOpenHelper {
         return returnVo;
     }
 
-    public ArrayList<ItemVo> getItemListByCondition(ItemVo schVo, boolean isRepetition) {
+    public ArrayList<ItemVo> getItemListByCondition(ItemVo schVo) {
         Cursor cursor = getItemList(schVo);
 
         ArrayList<ItemVo> returnList = new ArrayList<ItemVo>();

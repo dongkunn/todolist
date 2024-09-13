@@ -12,10 +12,10 @@
     <string name="textSaved">Saved.</string>
     <string name="textInputContents">Please input contents.</string>
     <string name="textTouch">"화면을 터치해서 항목을 입력하세요."</string>
-    <string name="appwidget_text">EXAMPLE</string>
     <string name="configure">Configure</string>
-    <string name="add_widget">Add widget</string>
-    <string name="app_widget_description">This is an app widget description</string>
+    <string name="transparency">Transparency</string>
+    <string name="fontSize">Font Size</string>
+    <string name="saveBtn">Save</string>
     <string name="textManual">- To register an item, click anywhere on the screen.\n
 - To modify an added item, click on the item again.\n
 - To delete an item, swipe the added item.\n

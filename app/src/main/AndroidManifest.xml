@@ -31,12 +31,23 @@
                 android:resource="@xml/to_do_list_widget_info" />
         </receiver>
 
+        <service
+            android:name=".widget.PlannerRemoteViewService"
+            android:permission="android.permission.BIND_REMOTEVIEWS"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.widget.RemoteViewsService" />
+            </intent-filter>
+        </service>
+
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-1417793607999454~5178443204" />
 
         <activity
             android:name=".ToDoListWidgetConfigureActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"
+            android:hardwareAccelerated="false"
             android:exported="false">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />

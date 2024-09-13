@@ -13,10 +13,10 @@
     <string name="textSaved">Saved.</string>
     <string name="textInputContents">Please input contents.</string>
     <string name="textTouch">"화면을 터치해서 항목을 입력하세요."</string>
-    <string name="appwidget_text">EXAMPLE</string>
     <string name="configure">Configure</string>
-    <string name="add_widget">Add widget</string>
-    <string name="app_widget_description">This is an app widget description</string>
+    <string name="transparency">Transparency</string>
+    <string name="fontSize">Font Size</string>
+    <string name="saveBtn">Save</string>
     <string name="textManual">- 항목을 등록하려면, 화면 아무곳이나 클릭하세요.\n
 - 추가된 항목을 수정하려면, 추가된 항목을 다시 클릭하세요.\n
 - 항목을 삭제하려면, 추가된 항목을 swipe 하세요.\n

@@ -1,28 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="400dp"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@drawable/app_widget_background">
+
+    <include
+        layout="@layout/to_do_list_widget"
+        android:id="@+id/included_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:labelFor="@id/appwidget_text"
-        android:text="@string/configure" />
-
-    <EditText
-        android:id="@+id/appwidget_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text" />
-
-    <Button
-        android:id="@+id/add_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/add_widget" />
+        android:layout_marginTop="16dp"
+        android:text="@string/transparency"
+        android:textColor="#FFFFFF"/>
+
+    <hearsilent.discreteslider.DiscreteSlider
+        android:id="@+id/ds_transparency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        app:ds_count="100"
+        app:ds_progressOffset="0"
+        app:ds_minProgress="85"
+        app:ds_trackWidth="5dp"
+        app:ds_trackColor="#8F6ECE"
+        app:ds_inactiveTrackColor="#BAA3EC"
+        app:ds_thumbRadius="6dp"
+        app:ds_thumbColor="#8F6ECE"
+        app:ds_thumbPressedColor="#BAA3EC"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/fontSize"
+        android:textColor="#FFFFFF"/>
+
+    <hearsilent.discreteslider.DiscreteSlider
+        android:id="@+id/ds_font_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        app:ds_count="30"
+        app:ds_progressOffset="1"
+        app:ds_minProgress="19"
+        app:ds_trackWidth="5dp"
+        app:ds_trackColor="#8F6ECE"
+        app:ds_inactiveTrackColor="#BAA3EC"
+        app:ds_thumbRadius="6dp"
+        app:ds_thumbColor="#8F6ECE"
+        app:ds_thumbPressedColor="#BAA3EC"/>
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_border"
+        android:textColor="#FFFFFF"
+        android:text="@string/saveBtn"
+        android:layout_marginTop="16dp" />
 
 </LinearLayout>

@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements ChecklistAdapter.
 
         sqliteHelper = new SqliteHelper(getBaseContext());
 
-        itemList = sqliteHelper.getItemListByCondition(new ItemVo(), true);
+        itemList = sqliteHelper.getItemListByCondition(new ItemVo());
 
         // recyclerview 설정
         RecyclerView listRecyclerview = (RecyclerView) findViewById(R.id.listRecyclerview);
@@ -186,7 +186,7 @@ public class MainActivity extends AppCompatActivity implements ChecklistAdapter.
     }
 
     private void refreshView() {
-        ArrayList<ItemVo> list = sqliteHelper.getItemListByCondition(new ItemVo(), true);
+        ArrayList<ItemVo> list = sqliteHelper.getItemListByCondition(new ItemVo());
         adapter.setItems(list);
         this.itemList = list;
     }
