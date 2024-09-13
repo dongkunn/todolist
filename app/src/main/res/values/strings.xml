@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">To Do List</string>
+    <string name="app_name">do.now</string>
     <string name="main_title">To Do List...</string>
     <string name="noInputData">Please, Input contents.</string>
     <string name="deleteSelectData">Do you want to delete?</string>
