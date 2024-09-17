@@ -13,7 +13,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/main_title"
-        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:textSize="30sp"
         android:textAlignment="center"
         android:textStyle="bold"
@@ -21,8 +23,24 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/titleVersion"/>
+
+    <TextView
+        android:id="@+id/titleVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="10sp"
+        android:layout_marginEnd="15dp"
+        android:textAlignment="textEnd"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
         app:layout_constraintBottom_toTopOf="@id/listRecyclerview"
-    />
+        tools:ignore="SmallSp" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listRecyclerview"
         android:layout_width="match_parent"
@@ -32,7 +50,7 @@
         android:background="@null"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        app:layout_constraintTop_toBottomOf="@id/titleVersion"
         app:layout_constraintBottom_toTopOf="@id/cardBottom"/>
 
     <LinearLayout

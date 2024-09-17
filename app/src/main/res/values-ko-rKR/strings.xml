@@ -17,7 +17,7 @@
     <string name="transparency">Transparency</string>
     <string name="fontSize">Font Size</string>
     <string name="saveBtn">Save</string>
-    <string name="textManual">- 항목을 등록하려면, 화면 아무곳이나 클릭하세요.\n
+    <string name="textManual"> - 항목을 등록하려면, 화면 아무곳이나 클릭하세요.\n
 - 추가된 항목을 수정하려면, 추가된 항목을 다시 클릭하세요.\n
 - 항목을 삭제하려면, 추가된 항목을 swipe 하세요.\n
 - 항목의 순서를 변경하려면, 우측 drag icon을 길게 눌러서 순서를 변경하세요.\n

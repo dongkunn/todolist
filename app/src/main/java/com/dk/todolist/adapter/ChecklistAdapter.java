@@ -279,10 +279,12 @@ public class ChecklistAdapter extends RecyclerView.Adapter<ChecklistAdapter.Item
                                 recyclerView.post(() -> {
                                     Handler handler = new Handler(Looper.getMainLooper());
                                     handler.postDelayed(() -> {
-                                        contentsText.clearFocus();
-                                        items.remove(position);
-                                        recyclerView.scrollToPosition(items.size());
-                                        notifyDataSetChanged();
+                                        if (contentsText.getText().toString().trim().isEmpty() && !items.isEmpty()) {
+                                            contentsText.clearFocus();
+                                            items.remove(position);
+                                            recyclerView.scrollToPosition(items.size());
+                                            notifyDataSetChanged();
+                                        }
                                     }, 100);
                                 });
                                 //notifyDataSetChanged();

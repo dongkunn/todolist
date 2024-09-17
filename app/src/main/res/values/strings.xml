@@ -16,7 +16,7 @@
     <string name="transparency">Transparency</string>
     <string name="fontSize">Font Size</string>
     <string name="saveBtn">Save</string>
-    <string name="textManual">- To register an item, click anywhere on the screen.\n
+    <string name="textManual"> - To register an item, click anywhere on the screen.\n
 - To modify an added item, click on the item again.\n
 - To delete an item, swipe the added item.\n
 - To change the order of items, press and hold the drag icon on the right to rearrange.\n
