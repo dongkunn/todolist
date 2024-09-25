@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">do.now</string>
-    <string name="main_title">할일...</string>
+    <string name="main_title">할일</string>
     <string name="noInputData">Please, Input contents.</string>
     <string name="deleteSelectData">Do you want to delete?</string>
     <string name="okBtn">Confirm</string>
@@ -12,14 +12,10 @@
     <string name="deleteAllData">Do you want to delete all items?</string>
     <string name="textSaved">Saved.</string>
     <string name="textInputContents">Please input contents.</string>
-    <string name="textTouch">"화면을 터치해서 항목을 입력하세요."</string>
     <string name="configure">Configure</string>
     <string name="transparency">Transparency</string>
     <string name="fontSize">Font Size</string>
     <string name="saveBtn">Save</string>
-    <string name="textManual"> - 항목을 등록하려면, 화면 아무곳이나 클릭하세요.\n
-- 추가된 항목을 수정하려면, 추가된 항목을 다시 클릭하세요.\n
-- 항목을 삭제하려면, 추가된 항목을 swipe 하세요.\n
-- 항목의 순서를 변경하려면, 우측 drag icon을 길게 눌러서 순서를 변경하세요.\n
-- 위젯을 추가하여 할일을 항상 확인하세요.</string>
+    <string name="backBtnEndProcess">뒤로가기 버튼을 한번 더 누르면 종료됩니다.</string>
+    <string name="textManual">- 항목을 등록하려면, 화면 아무곳이나 클릭하세요.\n- 추가된 항목을 수정하려면, 추가된 항목을 다시 클릭하세요.\n- 항목을 삭제하려면, 추가된 항목을 swipe 하세요.\n- 항목의 순서를 변경하려면, 우측 drag icon을 길게 눌러서 순서를 변경하세요.\n- 위젯을 추가하여 할일을 항상 확인하세요.</string>
 </resources>

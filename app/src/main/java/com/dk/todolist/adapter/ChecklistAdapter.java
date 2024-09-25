@@ -1,25 +1,16 @@
 package com.dk.todolist.adapter;
 
 import android.annotation.SuppressLint;
-import android.content.ClipData;
-import android.content.ClipDescription;
 import android.content.Context;
-import android.graphics.Canvas;
-import android.graphics.Point;
-import android.os.Build;
 import android.os.Handler;
 import android.os.Looper;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
-import android.util.TypedValue;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.CheckBox;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,12 +20,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.dk.todolist.R;
 import com.dk.todolist.helper.ItemTouchHelperListener;
-import com.dk.todolist.util.PlannerUtil;
 import com.dk.todolist.vo.ItemVo;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
 
 public class ChecklistAdapter extends RecyclerView.Adapter<ChecklistAdapter.ItemViewHolder>
         implements ItemTouchHelperListener {
@@ -73,38 +61,6 @@ public class ChecklistAdapter extends RecyclerView.Adapter<ChecklistAdapter.Item
     public void onBindViewHolder(@NonNull ItemViewHolder holder, int position) {
         holder.onBind(items.get(position),position);
 
-//        holder.contentsText.setOnLongClickListener(view -> {
-//            int itemPosition = (int) view.getTag();
-//            ClipData.Item item = new ClipData.Item(String.valueOf(itemPosition));
-//            String[] mimeTypes = {ClipDescription.MIMETYPE_TEXT_PLAIN};
-//            ClipData dragData = new ClipData(String.valueOf(itemPosition), mimeTypes, item);
-//
-//            // 커스텀 DragShadowBuilder 생성
-//            View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(view) {
-//                @Override
-//                public void onProvideShadowMetrics(Point outShadowSize, Point outShadowTouchPoint) {
-//                    // 그림자 크기를 뷰와 동일하게 설정
-//                    outShadowSize.set(view.getWidth(), view.getHeight());
-//                    // 터치 포인트를 텍스트의 중앙으로 설정
-//                    outShadowTouchPoint.set(view.findViewById(R.id.contentsText).getWidth() / 2, view.getHeight() / 2);
-//                }
-//
-//                @Override
-//                public void onDrawShadow(Canvas canvas) {
-//                    // 뷰를 그대로 그림자로 그립니다
-//                    view.draw(canvas);
-//                }
-//            };
-//
-//            // 드래그 시작
-//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-//                view.startDragAndDrop(dragData, shadowBuilder, view, 0);
-//            } else {
-//                view.startDrag(dragData, shadowBuilder, view, 0);
-//            }
-//            return true;
-//        });
-
         // drag 아이콘에만 long click 이벤트 추가
         holder.iconComplete.setOnLongClickListener(v -> {
             if (mItemTouchHelper != null) {
@@ -117,9 +73,6 @@ public class ChecklistAdapter extends RecyclerView.Adapter<ChecklistAdapter.Item
             // 첫번째 항목(추가시 첫번째에 추가) 이면서 값이 없을때가 신규 항목이어서 focus 필요
             // 포커스 및 키보드 자동 활성화
             holder.contentsText.requestFocus();
-
-            //키보드 보이게 하는 부분
-            PlannerUtil.showKeyboard(context);
         } else {
             holder.contentsText.clearFocus();
         }
@@ -166,65 +119,13 @@ public class ChecklistAdapter extends RecyclerView.Adapter<ChecklistAdapter.Item
     }
 
     public class ItemViewHolder extends RecyclerView.ViewHolder {
-        LinearLayout llCard;
         public TextView contentsText;
-        CheckBox checkBox;
         ImageView iconComplete;
 
         public ItemViewHolder(@NonNull View convertView) {
             super(convertView);
-            llCard = convertView.findViewById(R.id.llCard);
             contentsText = convertView.findViewById(R.id.contentsText);
-            checkBox = convertView.findViewById(R.id.checkbox);
             iconComplete = convertView.findViewById(R.id.iconComplete);
-
-            checkBox.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    int position = getAdapterPosition();
-                    if (position != RecyclerView.NO_POSITION) {
-                        ItemVo vo = items.get(position);
-
-                        if (((CheckBox) v).isChecked()) {
-                            vo.setItemComYn("Y");
-
-                            contentsText.setEnabled(false);
-                        } else {
-                            vo.setItemComYn("N");
-
-                            contentsText.setEnabled(true);
-                        }
-                        // remove focus
-                        contentsText.clearFocus();;
-
-                        changeListener.onSaveClick(vo);
-                    }
-                }
-            });
-
-            contentsText.setOnKeyListener(new View.OnKeyListener() {
-                @Override
-                public boolean onKey(View v, int keyCode, KeyEvent event) {
-//                    if (keyCode == KeyEvent.KEYCODE_ENTER) {
-//                        int position = getAdapterPosition();
-//                        if (position != RecyclerView.NO_POSITION) {
-//                            if (contentsText.getText().toString().trim().isEmpty()) {
-//                                Toast.makeText(context, context.getString(R.string.noInputData), Toast.LENGTH_SHORT).show();
-//                                return true;
-//                            }
-//                            ItemVo vo = items.get(position);
-//                            vo.setItemContents(contentsText.getText().toString());
-//                            // changeListener.onSaveClick(vo);
-//
-//                            // clear focus
-//                            contentsText.clearFocus();
-//                            // change image
-//                            iconComplete.setImageResource(R.drawable.baseline_drag_handle_24);
-//                        }
-//                    }
-                    return false;
-                }
-            });
 
             contentsText.addTextChangedListener(new TextWatcher() {
                 @Override
@@ -246,6 +147,7 @@ public class ChecklistAdapter extends RecyclerView.Adapter<ChecklistAdapter.Item
                     }
                 }
             });
+
             contentsText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
                 String prevStr="";
                 @Override
@@ -301,6 +203,7 @@ public class ChecklistAdapter extends RecyclerView.Adapter<ChecklistAdapter.Item
                     }
                 }
             });
+
             iconComplete.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -312,45 +215,18 @@ public class ChecklistAdapter extends RecyclerView.Adapter<ChecklistAdapter.Item
                         }
                         ItemVo vo = items.get(position);
                         vo.setItemContents(contentsText.getText().toString());
-                        // changeListener.onSaveClick(vo);
 
                         // clear focus
                         contentsText.clearFocus();
                         // change image
-                        // iconComplete.setImageResource(0);
                         iconComplete.setImageResource(R.drawable.baseline_drag_handle_24);
                     }
                 }
             });
-
         }
 
         public void onBind(ItemVo itemVo, int position){
             contentsText.setText(itemVo.getItemContents());
-            checkBox.setChecked(itemVo.getItemComYn().equals("Y"));
-            contentsText.setEnabled(!itemVo.getItemComYn().equals("Y"));
-
-            // set tag
-            contentsText.setTag(itemVo.getId());
-            llCard.setTag(itemVo.getId());
-
-            // LayoutParams 생성
-            if (itemVo.isRepetition()) {
-                iconComplete.setVisibility(View.INVISIBLE);
-
-                ViewGroup.LayoutParams checkParams = checkBox.getLayoutParams();
-                checkParams.height = 0;
-                checkParams.width = 0;
-                checkBox.setLayoutParams(checkParams);
-
-            } else {
-                iconComplete.setVisibility(View.VISIBLE);
-
-                ViewGroup.LayoutParams checkParams = checkBox.getLayoutParams();
-                checkParams.height = PlannerUtil.dpToPx(context, 17);
-                checkParams.width = PlannerUtil.dpToPx(context, 17);
-                checkBox.setLayoutParams(checkParams);
-            }
         }
     }
 

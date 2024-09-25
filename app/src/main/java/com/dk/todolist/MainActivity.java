@@ -12,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -48,6 +49,8 @@ public class MainActivity extends AppCompatActivity implements ChecklistAdapter.
     private SqliteHelper sqliteHelper;
     ArrayList<ItemVo> itemList;
     ChecklistAdapter adapter;
+    private long backPressedTime = 0;
+    private static final int BACK_PRESS_INTERVAL = 2000; // 2초
     @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +75,7 @@ public class MainActivity extends AppCompatActivity implements ChecklistAdapter.
 
         TextView versionTv = (TextView) findViewById(R.id.titleVersion);
         versionTv.setText("Version " + PlannerUtil.getAppVersion(getBaseContext()));
+
         ImageView shareImageView = (ImageView) findViewById(R.id.shareBtn);
         ImageView deleteImageView = (ImageView) findViewById(R.id.deleteBtn);
         ImageView calendarImageView = (ImageView) findViewById(R.id.calendarBtn);
@@ -134,15 +138,15 @@ public class MainActivity extends AppCompatActivity implements ChecklistAdapter.
         listRecyclerview.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
             public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
-                super.onScrolled(recyclerView, dx, dy);
-
-                // 현재 포커스가 있는 아이템의 위치를 가져옵니다.
-                int focusedPosition = recyclerView.getChildAdapterPosition(recyclerView.getFocusedChild());
-
-                // 스크롤 후에도 포커스가 유지되도록 아이템을 다시 포커스합니다.
-                if (focusedPosition != RecyclerView.NO_POSITION) {
-                    recyclerView.findViewHolderForAdapterPosition(focusedPosition).itemView.requestFocus();
-                }
+//            super.onScrolled(recyclerView, dx, dy);
+//
+//            // 현재 포커스가 있는 아이템의 위치를 가져옵니다.
+//            int focusedPosition = recyclerView.getChildAdapterPosition(recyclerView.getFocusedChild());
+//
+//            // 스크롤 후에도 포커스가 유지되도록 아이템을 다시 포커스합니다.
+//            if (focusedPosition != RecyclerView.NO_POSITION) {
+//                recyclerView.findViewHolderForAdapterPosition(focusedPosition).itemView.requestFocus();
+//            }
             }
         });
 
@@ -162,6 +166,22 @@ public class MainActivity extends AppCompatActivity implements ChecklistAdapter.
                     }
                 }
                 return false; // false를 반환하여 터치 이벤트가 계속 처리되도록 합니다.
+            }
+        });
+
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                long tempTime = System.currentTimeMillis();
+                long intervalTime = tempTime - backPressedTime;
+
+                if (intervalTime >= 0 && BACK_PRESS_INTERVAL >= intervalTime) {
+                    finishAffinity();
+                    System.exit(0);
+                } else {
+                    backPressedTime = tempTime;
+                    Toast.makeText(getApplicationContext(), getString(R.string.backBtnEndProcess), Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -192,8 +212,8 @@ public class MainActivity extends AppCompatActivity implements ChecklistAdapter.
 
     private void refreshView() {
         ArrayList<ItemVo> list = sqliteHelper.getItemListByCondition(new ItemVo());
-        adapter.setItems(list);
         this.itemList = list;
+        adapter.setItems(list);
     }
 
     private boolean isEmpty(ArrayList<ItemVo> list) {

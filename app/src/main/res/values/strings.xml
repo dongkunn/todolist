@@ -11,14 +11,10 @@
     <string name="deleteAllData">Do you want to delete all items?</string>
     <string name="textSaved">Saved.</string>
     <string name="textInputContents">Please input contents.</string>
-    <string name="textTouch">"화면을 터치해서 항목을 입력하세요."</string>
     <string name="configure">Configure</string>
     <string name="transparency">Transparency</string>
     <string name="fontSize">Font Size</string>
     <string name="saveBtn">Save</string>
-    <string name="textManual"> - To register an item, click anywhere on the screen.\n
-- To modify an added item, click on the item again.\n
-- To delete an item, swipe the added item.\n
-- To change the order of items, press and hold the drag icon on the right to rearrange.\n
-- Always check your to-do list by adding a widget.</string>
+    <string name="backBtnEndProcess">If you press back button one more, then program will be done.</string>
+    <string name="textManual">- To register an item, click anywhere on the screen.\n- To modify an added item, click on the item again.\n- To delete an item, swipe the added item.\n- To change the order of items, press and hold the drag icon on the right to rearrange.\n- Always check your to-do list by adding a widget.</string>
 </resources>

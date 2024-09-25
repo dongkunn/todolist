@@ -9,14 +9,4 @@
                 android:endColor="#BAA3EC"/>
         </shape>
     </item>
-
-    <item android:top="50dp">
-        <shape android:shape="rectangle">
-            <gradient
-                android:angle="180"
-                android:startColor="#EFEFF3"
-                android:centerColor="#F3F3F6"
-                android:endColor="#FFFFFF"/>
-        </shape>
-    </item>
 </layer-list>
