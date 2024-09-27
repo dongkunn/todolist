@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">do.now</string>
+    <string name="main_title">Aufgabenliste</string>
+    <string name="noInputData">Bitte geben Sie Inhalte ein.</string>
+    <string name="deleteSelectData">Möchten Sie löschen?</string>
+    <string name="okBtn">Bestätigen</string>
+    <string name="noBtn">Abbrechen</string>
+    <string name="shareNoData">Es gibt keine Daten zum Teilen.</string>
+    <string name="deleteNoData">Es gibt keine Daten zum Löschen.</string>
+    <string name="textDeleted">Gelöscht.</string>
+    <string name="deleteAllData">Möchten Sie alle Elemente löschen?</string>
+    <string name="textSaved">Gespeichert.</string>
+    <string name="textInputContents">Bitte geben Sie Inhalte ein.</string>
+    <string name="configure">Konfigurieren</string>
+    <string name="transparency">Transparenz</string>
+    <string name="fontSize">Schriftgröße</string>
+    <string name="saveBtn">Speichern</string>
+    <string name="backBtnEndProcess">Wenn Sie die Zurück-Taste noch einmal drücken, wird das Programm beendet.</string>
+    <string name="textManual">- Um ein Element zu registrieren, klicken Sie auf die Hinzufügen-Schaltfläche oder klicken Sie irgendwo auf den Bildschirm.\n- Um ein hinzugefügtes Element zu ändern, klicken Sie erneut darauf.\n- Um ein Element zu löschen, wischen Sie über das hinzugefügte Element.\n- Um die Reihenfolge der Elemente zu ändern, halten Sie das Ziehsymbol rechts gedrückt und ordnen Sie neu an.\n- Überprüfen Sie Ihre Aufgabenliste immer, indem Sie ein Widget hinzufügen.</string>
+</resources>

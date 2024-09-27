@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">do.now</string>
+    <string name="main_title">Liste de tâches</string>
+    <string name="noInputData">Veuillez saisir le contenu.</string>
+    <string name="deleteSelectData">Voulez-vous supprimer ?</string>
+    <string name="okBtn">Confirmer</string>
+    <string name="noBtn">Annuler</string>
+    <string name="shareNoData">Il n\'y a pas de données à partager.</string>
+    <string name="deleteNoData">Il n\'y a pas de données à supprimer.</string>
+    <string name="textDeleted">Supprimé.</string>
+    <string name="deleteAllData">Voulez-vous supprimer tous les éléments ?</string>
+    <string name="textSaved">Enregistré.</string>
+    <string name="textInputContents">Veuillez saisir le contenu.</string>
+    <string name="configure">Configurer</string>
+    <string name="transparency">Transparence</string>
+    <string name="fontSize">Taille de police</string>
+    <string name="saveBtn">Enregistrer</string>
+    <string name="backBtnEndProcess">Si vous appuyez à nouveau sur le bouton retour, le programme se terminera.</string>
+    <string name="textManual">- Pour enregistrer un élément, cliquez sur le bouton ajouter ou cliquez n\'importe où sur l\'écran.\n- Pour modifier un élément ajouté, cliquez à nouveau sur l\'élément.\n- Pour supprimer un élément, faites glisser l\'élément ajouté.\n- Pour changer l\'ordre des éléments, appuyez et maintenez l\'icône de glissement à droite pour réorganiser.\n- Vérifiez toujours votre liste de tâches en ajoutant un widget.</string>
+</resources>

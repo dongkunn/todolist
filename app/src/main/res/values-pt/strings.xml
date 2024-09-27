@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">do.now</string>
+    <string name="main_title">Lista de Tarefas</string>
+    <string name="noInputData">Por favor, insira o conteúdo.</string>
+    <string name="deleteSelectData">Deseja excluir?</string>
+    <string name="okBtn">Confirmar</string>
+    <string name="noBtn">Cancelar</string>
+    <string name="shareNoData">Não há dados para compartilhar.</string>
+    <string name="deleteNoData">Não há dados para excluir.</string>
+    <string name="textDeleted">Excluído.</string>
+    <string name="deleteAllData">Deseja excluir todos os itens?</string>
+    <string name="textSaved">Salvo.</string>
+    <string name="textInputContents">Por favor, insira o conteúdo.</string>
+    <string name="configure">Configurar</string>
+    <string name="transparency">Transparência</string>
+    <string name="fontSize">Tamanho da Fonte</string>
+    <string name="saveBtn">Salvar</string>
+    <string name="backBtnEndProcess">Se você pressionar o botão voltar mais uma vez, o programa será encerrado.</string>
+    <string name="textManual">- Para registrar um item, clique no botão adicionar ou clique em qualquer lugar na tela.\n- Para modificar um item adicionado, clique no item novamente.\n- Para excluir um item, deslize o item adicionado.\n- Para alterar a ordem dos itens, pressione e segure o ícone de arrastar à direita para reorganizar.\n- Sempre verifique sua lista de tarefas adicionando um widget.</string>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">do.now</string>
+    <string name="main_title">Daftar Tugas</string>
+    <string name="noInputData">Mohon masukkan konten.</string>
+    <string name="deleteSelectData">Apakah Anda ingin menghapus?</string>
+    <string name="okBtn">Konfirmasi</string>
+    <string name="noBtn">Batal</string>
+    <string name="shareNoData">Tidak ada data untuk dibagikan.</string>
+    <string name="deleteNoData">Tidak ada data untuk dihapus.</string>
+    <string name="textDeleted">Terhapus.</string>
+    <string name="deleteAllData">Apakah Anda ingin menghapus semua item?</string>
+    <string name="textSaved">Tersimpan.</string>
+    <string name="textInputContents">Mohon masukkan konten.</string>
+    <string name="configure">Konfigurasi</string>
+    <string name="transparency">Transparansi</string>
+    <string name="fontSize">Ukuran Font</string>
+    <string name="saveBtn">Simpan</string>
+    <string name="backBtnEndProcess">Jika Anda menekan tombol kembali sekali lagi, maka program akan selesai.</string>
+    <string name="textManual">- Untuk mendaftarkan item, klik tombol tambah atau klik di mana saja pada layar.\n- Untuk memodifikasi item yang ditambahkan, klik lagi pada item tersebut.\n- Untuk menghapus item, geser item yang ditambahkan.\n- Untuk mengubah urutan item, tekan dan tahan ikon seret di sebelah kanan untuk menyusun ulang.\n- Selalu periksa daftar tugas Anda dengan menambahkan widget.</string>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">do.now</string>
+    <string name="main_title">قائمة المهام</string>
+    <string name="noInputData">من فضلك، أدخل المحتوى.</string>
+    <string name="deleteSelectData">هل تريد الحذف؟</string>
+    <string name="okBtn">تأكيد</string>
+    <string name="noBtn">إلغاء</string>
+    <string name="shareNoData">لا توجد بيانات للمشاركة.</string>
+    <string name="deleteNoData">لا توجد بيانات للحذف.</string>
+    <string name="textDeleted">تم الحذف.</string>
+    <string name="deleteAllData">هل تريد حذف جميع العناصر؟</string>
+    <string name="textSaved">تم الحفظ.</string>
+    <string name="textInputContents">من فضلك، أدخل المحتوى.</string>
+    <string name="configure">تكوين</string>
+    <string name="transparency">الشفافية</string>
+    <string name="fontSize">حجم الخط</string>
+    <string name="saveBtn">حفظ</string>
+    <string name="backBtnEndProcess">إذا ضغطت على زر الرجوع مرة أخرى، سيتم إنهاء البرنامج.</string>
+    <string name="textManual">- لتسجيل عنصر، انقر على زر الإضافة أو انقر في أي مكان على الشاشة.\n- لتعديل عنصر مضاف، انقر على العنصر مرة أخرى.\n- لحذف عنصر، اسحب العنصر المضاف.\n- لتغيير ترتيب العناصر، اضغط مع الاستمرار على أيقونة السحب على اليمين لإعادة الترتيب.\n- تحقق دائمًا من قائمة مهامك عن طريق إضافة أداة.</string>
+</resources>

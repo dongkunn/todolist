@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">do.now</string>
+    <string name="main_title">Yapılacaklar Listesi</string>
+    <string name="noInputData">Lütfen içerik girin.</string>
+    <string name="deleteSelectData">Silmek istiyor musunuz?</string>
+    <string name="okBtn">Onayla</string>
+    <string name="noBtn">İptal</string>
+    <string name="shareNoData">Paylaşılacak veri yok.</string>
+    <string name="deleteNoData">Silinecek veri yok.</string>
+    <string name="textDeleted">Silindi.</string>
+    <string name="deleteAllData">Tüm öğeleri silmek istiyor musunuz?</string>
+    <string name="textSaved">Kaydedildi.</string>
+    <string name="textInputContents">Lütfen içerik girin.</string>
+    <string name="configure">Yapılandır</string>
+    <string name="transparency">Şeffaflık</string>
+    <string name="fontSize">Yazı Tipi Boyutu</string>
+    <string name="saveBtn">Kaydet</string>
+    <string name="backBtnEndProcess">Geri tuşuna bir kez daha basarsanız, program sonlandırılacak.</string>
+    <string name="textManual">- Bir öğe kaydetmek için, ekle düğmesine tıklayın veya ekranın herhangi bir yerine tıklayın.\n- Eklenen bir öğeyi düzenlemek için, öğeye tekrar tıklayın.\n- Bir öğeyi silmek için, eklenen öğeyi kaydırın.\n- Öğelerin sırasını değiştirmek için, sağdaki sürükleme simgesine basılı tutarak yeniden düzenleyin.\n- Her zaman bir widget ekleyerek yapılacaklar listenizi kontrol edin.</string>
+</resources>

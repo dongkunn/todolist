@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">do.now</string>
+    <string name="main_title">やることリスト</string>
+    <string name="noInputData">内容を入力してください。</string>
+    <string name="deleteSelectData">削除しますか？</string>
+    <string name="okBtn">確認</string>
+    <string name="noBtn">キャンセル</string>
+    <string name="shareNoData">共有するデータがありません。</string>
+    <string name="deleteNoData">削除するデータがありません。</string>
+    <string name="textDeleted">削除されました。</string>
+    <string name="deleteAllData">すべての項目を削除しますか？</string>
+    <string name="textSaved">保存されました。</string>
+    <string name="textInputContents">内容を入力してください。</string>
+    <string name="configure">設定</string>
+    <string name="transparency">透明度</string>
+    <string name="fontSize">フォントサイズ</string>
+    <string name="saveBtn">保存</string>
+    <string name="backBtnEndProcess">もう一度戻るボタンを押すと、プログラムが終了します。</string>
+    <string name="textManual">- 項目を登録するには、追加ボタンをクリックするか、画面のどこかをクリックしてください。\n- 追加された項目を修正するには、その項目を再度クリックしてください。\n- 項目を削除するには、追加された項目をスワイプしてください。\n- 項目の順序を変更するには、右側のドラッグアイコンを長押しして並べ替えてください。\n- ウィジェットを追加して、常にあなたのやることリストをチェックしてください。</string>
+</resources>

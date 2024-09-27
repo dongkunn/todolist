@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">do.now</string>
+    <string name="main_title">Takenlijst</string>
+    <string name="noInputData">Voer alstublieft inhoud in.</string>
+    <string name="deleteSelectData">Wilt u verwijderen?</string>
+    <string name="okBtn">Bevestigen</string>
+    <string name="noBtn">Annuleren</string>
+    <string name="shareNoData">Er zijn geen gegevens om te delen.</string>
+    <string name="deleteNoData">Er zijn geen gegevens om te verwijderen.</string>
+    <string name="textDeleted">Verwijderd.</string>
+    <string name="deleteAllData">Wilt u alle items verwijderen?</string>
+    <string name="textSaved">Opgeslagen.</string>
+    <string name="textInputContents">Voer alstublieft inhoud in.</string>
+    <string name="configure">Configureren</string>
+    <string name="transparency">Transparantie</string>
+    <string name="fontSize">Lettergrootte</string>
+    <string name="saveBtn">Opslaan</string>
+    <string name="backBtnEndProcess">Als u nog een keer op de terugknop drukt, wordt het programma beëindigd.</string>
+    <string name="textManual">- Om een item te registreren, klik op de toevoegknop of klik ergens op het scherm.\n- Om een toegevoegd item te wijzigen, klik nogmaals op het item.\n- Om een item te verwijderen, veeg over het toegevoegde item.\n- Om de volgorde van items te wijzigen, houd het sleeppictogram aan de rechterkant ingedrukt om te herschikken.\n- Controleer altijd uw takenlijst door een widget toe te voegen.</string>
+</resources>

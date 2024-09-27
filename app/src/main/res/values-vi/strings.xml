@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">do.now</string>
+    <string name="main_title">Danh sách công việc</string>
+    <string name="noInputData">Vui lòng nhập nội dung.</string>
+    <string name="deleteSelectData">Bạn có muốn xóa không?</string>
+    <string name="okBtn">Xác nhận</string>
+    <string name="noBtn">Hủy bỏ</string>
+    <string name="shareNoData">Không có dữ liệu để chia sẻ.</string>
+    <string name="deleteNoData">Không có dữ liệu để xóa.</string>
+    <string name="textDeleted">Đã xóa.</string>
+    <string name="deleteAllData">Bạn có muốn xóa tất cả các mục không?</string>
+    <string name="textSaved">Đã lưu.</string>
+    <string name="textInputContents">Vui lòng nhập nội dung.</string>
+    <string name="configure">Cấu hình</string>
+    <string name="transparency">Độ trong suốt</string>
+    <string name="fontSize">Cỡ chữ</string>
+    <string name="saveBtn">Lưu</string>
+    <string name="backBtnEndProcess">Nếu bạn nhấn nút quay lại một lần nữa, chương trình sẽ kết thúc.</string>
+    <string name="textManual">- Để đăng ký một mục, nhấp vào nút thêm hoặc nhấp vào bất kỳ đâu trên màn hình.\n- Để sửa đổi một mục đã thêm, nhấp vào mục đó một lần nữa.\n- Để xóa một mục, vuốt mục đã thêm.\n- Để thay đổi thứ tự các mục, nhấn và giữ biểu tượng kéo ở bên phải để sắp xếp lại.\n- Luôn kiểm tra danh sách công việc của bạn bằng cách thêm một widget.</string>
+</resources>

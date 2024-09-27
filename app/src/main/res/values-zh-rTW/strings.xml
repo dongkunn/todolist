@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">do.now</string>
+    <string name="main_title">待辦事項清單</string>
+    <string name="noInputData">請輸入內容。</string>
+    <string name="deleteSelectData">您確定要刪除嗎？</string>
+    <string name="okBtn">確認</string>
+    <string name="noBtn">取消</string>
+    <string name="shareNoData">沒有可分享的數據。</string>
+    <string name="deleteNoData">沒有可刪除的數據。</string>
+    <string name="textDeleted">已刪除。</string>
+    <string name="deleteAllData">您確定要刪除所有項目嗎？</string>
+    <string name="textSaved">已保存。</string>
+    <string name="textInputContents">請輸入內容。</string>
+    <string name="configure">配置</string>
+    <string name="transparency">透明度</string>
+    <string name="fontSize">字體大小</string>
+    <string name="saveBtn">保存</string>
+    <string name="backBtnEndProcess">如果再按一次返回按鈕，程序將結束。</string>
+    <string name="textManual">- 要註冊項目，請點擊添加按鈕或點擊屏幕任何位置。\n- 要修改已添加的項目，請再次點擊該項目。\n- 要刪除項目，請滑動已添加的項目。\n- 要更改項目順序，請長按右側的拖動圖標進行重新排序。\n- 通過添加小部件隨時查看您的待辦事項清單。</string>
+</resources>

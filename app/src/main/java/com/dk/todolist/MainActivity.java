@@ -35,6 +35,7 @@ import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import org.w3c.dom.Text;
 
@@ -80,6 +81,13 @@ public class MainActivity extends AppCompatActivity implements ChecklistAdapter.
         ImageView deleteImageView = (ImageView) findViewById(R.id.deleteBtn);
         ImageView calendarImageView = (ImageView) findViewById(R.id.calendarBtn);
 
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.addButton);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                addItem(listRecyclerview);
+            }
+        });
         shareImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

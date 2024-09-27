@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">do.now</string>
+    <string name="main_title">Список дел</string>
+    <string name="noInputData">Пожалуйста, введите содержание.</string>
+    <string name="deleteSelectData">Вы хотите удалить?</string>
+    <string name="okBtn">Подтвердить</string>
+    <string name="noBtn">Отмена</string>
+    <string name="shareNoData">Нет данных для обмена.</string>
+    <string name="deleteNoData">Нет данных для удаления.</string>
+    <string name="textDeleted">Удалено.</string>
+    <string name="deleteAllData">Вы хотите удалить все элементы?</string>
+    <string name="textSaved">Сохранено.</string>
+    <string name="textInputContents">Пожалуйста, введите содержание.</string>
+    <string name="configure">Настроить</string>
+    <string name="transparency">Прозрачность</string>
+    <string name="fontSize">Размер шрифта</string>
+    <string name="saveBtn">Сохранить</string>
+    <string name="backBtnEndProcess">Если вы нажмете кнопку назад еще раз, программа завершится.</string>
+    <string name="textManual">- Чтобы зарегистрировать элемент, нажмите кнопку добавления или нажмите в любом месте экрана.\n- Чтобы изменить добавленный элемент, нажмите на него еще раз.\n- Чтобы удалить элемент, проведите по добавленному элементу.\n- Чтобы изменить порядок элементов, нажмите и удерживайте значок перетаскивания справа для перестановки.\n- Всегда проверяйте свой список дел, добавив виджет.</string>
+</resources>

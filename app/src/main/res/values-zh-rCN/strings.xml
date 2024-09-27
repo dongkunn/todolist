@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">do.now</string>
+    <string name="main_title">待办事项清单</string>
+    <string name="noInputData">请输入内容。</string>
+    <string name="deleteSelectData">您想删除吗？</string>
+    <string name="okBtn">确认</string>
+    <string name="noBtn">取消</string>
+    <string name="shareNoData">没有可分享的数据。</string>
+    <string name="deleteNoData">没有可删除的数据。</string>
+    <string name="textDeleted">已删除。</string>
+    <string name="deleteAllData">您想删除所有项目吗？</string>
+    <string name="textSaved">已保存。</string>
+    <string name="textInputContents">请输入内容。</string>
+    <string name="configure">配置</string>
+    <string name="transparency">透明度</string>
+    <string name="fontSize">字体大小</string>
+    <string name="saveBtn">保存</string>
+    <string name="backBtnEndProcess">如果再按一次返回按钮，程序将会结束。</string>
+    <string name="textManual">- 要注册项目，请点击添加按钮或点击屏幕任意位置。\n- 要修改已添加的项目，请再次点击该项目。\n- 要删除项目，请滑动已添加的项目。\n- 要更改项目顺序，请长按右侧的拖动图标进行重新排列。\n- 通过添加小部件随时查看您的待办事项清单。</string>
+</resources>

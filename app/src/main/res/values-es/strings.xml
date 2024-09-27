@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">do.now</string>
+    <string name="main_title">Lista de Tareas</string>
+    <string name="noInputData">Por favor, ingrese contenido.</string>
+    <string name="deleteSelectData">¿Quieres eliminar?</string>
+    <string name="okBtn">Confirmar</string>
+    <string name="noBtn">Cancelar</string>
+    <string name="shareNoData">No hay datos para compartir.</string>
+    <string name="deleteNoData">No hay datos para eliminar.</string>
+    <string name="textDeleted">Eliminado.</string>
+    <string name="deleteAllData">¿Quieres eliminar todos los elementos?</string>
+    <string name="textSaved">Guardado.</string>
+    <string name="textInputContents">Por favor, ingrese contenido.</string>
+    <string name="configure">Configurar</string>
+    <string name="transparency">Transparencia</string>
+    <string name="fontSize">Tamaño de Fuente</string>
+    <string name="saveBtn">Guardar</string>
+    <string name="backBtnEndProcess">Si presionas el botón de retroceso una vez más, el programa finalizará.</string>
+    <string name="textManual">- Para registrar un elemento, haga clic en el botón agregar o haga clic en cualquier lugar de la pantalla.\n- Para modificar un elemento agregado, haga clic en el elemento nuevamente.\n- Para eliminar un elemento, deslice el elemento agregado.\n- Para cambiar el orden de los elementos, mantenga presionado el icono de arrastre a la derecha para reorganizar.\n- Siempre revise su lista de tareas agregando un widget.</string>
+</resources>
