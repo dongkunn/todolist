@@ -39,6 +39,20 @@ android {
     buildFeatures {
         viewBinding = true
     }
+    flavorDimensions += listOf("version")
+    productFlavors {
+        create("googleads") {
+            dimension = "version"
+            buildConfigField("boolean", "isGoogleAd", "true")
+        }
+
+        create("googlepaid") {
+            dimension = "version"
+            applicationIdSuffix = ".googlepaid"
+            versionNameSuffix = "-googlepaid"
+            buildConfigField("boolean", "isGoogleAd", "false")
+        }
+    }
 }
 
 dependencies {
