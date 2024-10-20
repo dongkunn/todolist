@@ -43,7 +43,7 @@
         <ImageView
             android:id="@+id/addButton"
             android:layout_width="48dp"
-            android:layout_height="40dp"
+            android:layout_height="43dp"
             android:scaleType="fitXY"
             android:src="@drawable/baseline_add_24"
             android:layout_gravity="center_vertical"
