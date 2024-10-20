@@ -20,6 +20,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.dk.todolist.R;
 import com.dk.todolist.helper.ItemTouchHelperListener;
+import com.dk.todolist.util.PlannerUtil;
 import com.dk.todolist.vo.ItemVo;
 
 import java.util.ArrayList;
@@ -165,6 +166,11 @@ public class ChecklistAdapter extends RecyclerView.Adapter<ChecklistAdapter.Item
                             if (position != RecyclerView.NO_POSITION) {
                                 ItemVo vo = items.get(position);
                                 vo.setItemContents(contentsText.getText().toString());
+
+                                // hide keyboard
+                                PlannerUtil.hideKeyboard(context, contentsText);
+
+                                // save action
                                 changeListener.onSaveClick(vo);
                             }
                         }

@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity implements ChecklistAdapter.
         ImageView deleteImageView = (ImageView) findViewById(R.id.deleteBtn);
         ImageView calendarImageView = (ImageView) findViewById(R.id.calendarBtn);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.addButton);
+        ImageView fab = (ImageView) findViewById(R.id.addButton);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -251,6 +251,8 @@ public class MainActivity extends AppCompatActivity implements ChecklistAdapter.
 
         list.add(0, vo);
         adapter.setItems(list);
+
+        PlannerUtil.showKeyboard(getBaseContext());
 
         return true;
     }
