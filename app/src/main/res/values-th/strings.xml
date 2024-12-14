@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">do.now</string>
+    <string name="main_title">สิ่งที่ต้องทำ</string>
+    <string name="noInputData">กรุณาป้อนเนื้อหา</string>
+    <string name="deleteSelectData">คุณต้องการลบหรือไม่?</string>
+    <string name="okBtn">ยืนยัน</string>
+    <string name="noBtn">ยกเลิก</string>
+    <string name="shareNoData">ไม่มีเนื้อหาที่จะแชร์</string>
+    <string name="deleteNoData">ไม่มีเนื้อหาที่จะลบ</string>
+    <string name="textDeleted">ลบแล้ว</string>
+    <string name="deleteAllData">คุณต้องการลบทุกรายการหรือไม่?</string>
+    <string name="textSaved">บันทึกแล้ว</string>
+    <string name="textInputContents">กรุณาป้อนเนื้อหา</string>
+    <string name="configure">ตั้งค่า</string>
+    <string name="transparency">ความโปร่งใส</string>
+    <string name="fontSize">Font Size</string>
+    <string name="saveBtn">บันทึก</string>
+    <string name="backBtnEndProcess">กดปุ่มย้อนกลับอีกครั้งเพื่อออกจากโปรแกรม</string>
+    <string name="textManual">- เพื่อลงทะเบียนรายการ ให้กดปุ่ม + หรือคลิกที่ใดก็ได้บนหน้าจอ\n- เพื่อแก้ไขรายการที่เพิ่มแล้ว ให้คลิกที่รายการนั้นอีกครั้ง\n- เพื่อลบรายการ ให้ปัดรายการที่เพิ่มแล้ว\n- เพื่อเปลี่ยนลำดับรายการ ให้กดค้างที่ไอคอนลากทางด้านขวาและเปลี่ยนลำดับ\n- เพิ่มวิดเจ็ตเพื่อตรวจสอบสิ่งที่ต้องทำตลอดเวลา</string>
+</resources>
