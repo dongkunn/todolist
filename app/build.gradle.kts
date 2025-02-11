@@ -12,7 +12,7 @@ android {
         applicationId = "com.dk.todolist"
         minSdk = 26
         targetSdk = 34
-        versionCode = 15
+        versionCode = 17
         versionName = "1.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
