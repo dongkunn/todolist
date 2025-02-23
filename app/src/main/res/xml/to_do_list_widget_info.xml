@@ -5,7 +5,7 @@
     android:initialLayout="@layout/to_do_list_widget"
     android:minWidth="40dp"
     android:minHeight="40dp"
-    android:previewLayout="@layout/to_do_list_widget"
+    android:previewImage="@drawable/icon_do_now"
     android:resizeMode="horizontal|vertical"
     android:targetCellWidth="2"
     android:targetCellHeight="2"
